@@ -1832,13 +1832,11 @@ const exportAllTraceSessionsToTxt = () => {
         });
 
       lines.push("");
-      lines.push("---- FIM DEPENDS ON ----");
     }
 
     // Separador bem explícito: acabou a rastreabilidade e começou outra “nova”
     if (idx < sessionsToExport.length - 1) {
       lines.push("");
-      lines.push("===== NOVA FE / NOVA RASTREABILIDADE =====");
       lines.push("");
     }
   });
